@@ -2,6 +2,10 @@
 let s:cpo_save = &cpo
 set cpo&vim
 
+function! go#config#SearchBinPathFirst() abort
+  return get(g:, 'go_search_bin_path_first', 1)
+endfunction
+
 function! go#config#BinPath() abort
   return get(g:, "go_bin_path", "")
 endfunction
