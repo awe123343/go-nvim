@@ -1,3 +1,25 @@
+" IsWin returns 1 if current OS is Windows or 0 otherwise
+" Note that has('win32') is always 1 when has('win64') is 1, so has('win32') is enough.
+function! go#util#IsWin() abort
+  return has('win32')
+endfunction
+
+" PathListSep returns the appropriate OS specific path list separator.
+function! go#util#PathListSep() abort
+  if go#util#IsWin()
+    return ";"
+  endif
+  return ":"
+endfunction
+
+" PathListSep returns the appropriate OS specific path list separator.
+function! go#util#PathListSep() abort
+  if go#util#IsWin()
+    return ";"
+  endif
+  return ":"
+endfunction
+
 " LineEnding returns the correct line ending, based on the current fileformat
 function! go#util#LineEnding() abort
   if &fileformat == 'dos'
