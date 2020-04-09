@@ -2,6 +2,13 @@
 let s:cpo_save = &cpo
 set cpo&vim
 
+function! go#config#AddtagsTransform() abort
+  return get(g:, 'go_addtags_transform', "snakecase")
+endfunction
+
+function! go#config#AddtagsSkipUnexported() abort
+  return get(g:, 'go_addtags_skip_unexported', 0)
+endfunction
 function! go#config#SearchBinPathFirst() abort
   return get(g:, 'go_search_bin_path_first', 1)
 endfunction
