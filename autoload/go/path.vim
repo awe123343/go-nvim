@@ -175,10 +175,6 @@ function! go#path#CheckBinPath(binpath) abort
     endif
     let $PATH = old_path
 
-    if go#util#IsUsingCygwinShell() == 1
-      return s:CygwinPath(binpath)
-    endif
-
     return binpath
   endif
 
@@ -193,10 +189,6 @@ function! go#path#CheckBinPath(binpath) abort
   endif
 
   let $PATH = old_path
-
-  if go#util#IsUsingCygwinShell() == 1
-    return s:CygwinPath(a:binpath)
-  endif
 
   return go_bin_path . go#util#PathSep() . basename
 endfunction
