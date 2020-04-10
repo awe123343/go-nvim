@@ -16,7 +16,7 @@ setlocal formatoptions-=t
 setlocal comments=s1:/*,mb:*,ex:*/,://
 setlocal commentstring=//\ %s
 
-setlocal noexpandtab
+setlocal noexpandtab tabstop=4 shiftwidth=4
 
 compiler go
 
