@@ -1,6 +1,6 @@
 # go-nvim
 
-- syntax highlight
+- syntax highlight (from [vim-go](https://github.com/fatih/vim-go))
 - textobject need
   [vim-textobj-function](https://github.com/kana/vim-textobj-funcfunction)
 
