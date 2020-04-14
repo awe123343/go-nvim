@@ -1,4 +1,9 @@
 # go-nvim
 
-This plugin only provide the syntax highlight for go file.
+- syntax highlight
+- textobject need
+  [vim-textobj-function](https://github.com/kana/vim-textobj-funcfunction)
 
+## TODO
+
+- Use go rewrite some feature.
