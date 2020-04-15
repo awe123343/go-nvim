@@ -6,4 +6,4 @@
 
 ## TODO
 
-- Use go rewrite some feature.
+- Add tags
