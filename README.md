@@ -4,7 +4,7 @@
 - textobject need
   [vim-textobj-function](https://github.com/kana/vim-textobj-funcfunction)
 
-## Syntax settings on default
+## Syntax highlight settings on default
 
 ```viml
 let g:go_highlight_fold_enable_comment        = 0
